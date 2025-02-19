@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
+/* feature secsion */
+
+#feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px;
+    padding: 35px 100px;
+}
+
+/* feature one */
+.feature__one {
+    position: relative;
+    background: linear-gradient(#DDD4C500 0%, #8E887E);
+    padding-top: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    grid-row: 1 / 3;
+}
+
+.feature__one>p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21.3px;
+    color: gray;
+}
+
+.feature__one img {
+    position: absolute;
+    bottom: 0;
+}
+
+.feature__one .super {
+    color: white;
+    position: absolute;
+    bottom: 60px;
+}
+
+.feature__one .super p {
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 37.2px;
+    letter-spacing: -3%;
+}
+
+.feature__one .super h3 {
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 24px;
+    letter-spacing: -7%;
+    margin-top: 15px;
+
+}
+
+
+/* feature two */
+
+#feature .feature__two {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#feature .feature__two h3 {
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 37.2px;
+    letter-spacing: -3%;
+}
+
+#feature .feature__two .group {
+    display: flex;
+    gap: 20px;
+}
+
+#feature .feature__two .group>div:nth-child(2) {
+    border-left: 2px solid rgb(238, 238, 238);
+    border-right: 2px solid rgb(238, 238, 238);
+}
+
+#feature .feature__two .group i {
+    font-size: 30px;
+}
+
+#feature .feature__two .group p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22.1px;
+    letter-spacing: -2%;
+    margin-top: 8px;
+}
+
+/* feature three */
+
+.feature__three {
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.feature__three img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* collapsible content */
+
+#collapsible {
+    padding: 76px 59px;
+    display: flex;
+    color: #402C22;
+    font-family: "Inter", serif;
+    gap: 16px;
+}
+
+#collapsible div:nth-of-type(2) {
+    flex: 1.6;
+}
+
+#collapsible div:nth-of-type(2) img {
+    height: 100%;
+}
+
+#collapsible div:nth-of-type(3) {
+    flex: 1;
+}
+
+#collapsible div:nth-of-type(3) img {
+    height: 70%;
+}
+
+#collapsible .collapsible__left {
+    flex: 1.2;
+}
+
+#collapsible .collapsible__left>h3 {
+    font-family: Optima;
+    font-weight: 400;
+    font-size: 63px;
+    margin-top: 15px;
+}
+
+#collapsible .collapsible__left .cushion {
+    margin-top: 20px;
+}
+
+#collapsible .collapsible__left .cushion p:first-child {
+    font-family: Optima nova LT Pro;
+    font-size: 22px;
+}
+
+#collapsible .collapsible__left .cushion p:last-child {
+    margin-top: 14px;
+}
+
+#collapsible .collapsible__left .showMore {
+    margin-top: 29px;
+}
+
+#collapsible .collapsible__left .showMore div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #D9D5D3;
+}
+
+#collapsible .collapsible__left .showMore div>span {
+    font-family: Optima nova LT Pro;
+    font-size: 22px;
+    line-height: 26.84px;
+}
+
+#collapsible .collapsible__left .showMore div i {
+    cursor: pointer;
+}
+
+/* collapsible-bottom */
+#collapsible-bottom {
+    padding: 32px;
+    color: #462B20;
+    background-color: #FFF9F5;
+}
+
+#collapsible-bottom .line {
+    width: 100%;
+    height: 1px;
+    border: 1px dotted #F3EAE5;
+}
+
+#collapsible-bottom .heading {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+#collapsible-bottom .heading h3 {
+    width: max-content;
+    font-family: optima;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+#collapsible-bottom .heading .line {
+    flex: 1;
+}
+
+#collapsible-bottom .content {
+    display: flex;
+    margin-top: 88px;
+    gap: 60px;
+}
+
+#collapsible-bottom .content .collapsible-bottom__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#collapsible-bottom .content .collapsible-bottom__image>div {
+    display: flex;
+    flex-direction: column;
+    gap: 179px;
+}
+
+#collapsible-bottom .content .collapsible-bottom__image>div>.img-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr);
+}
+
+#collapsible-bottom .content .collapsible-bottom__image>div>.image1 img {
+    grid-column: span 2;
+}
+
+#collapsible-bottom .content .collapsible-bottom__image>div>.image2 img {
+    grid-column: 2/4;
+}
+
+#collapsible-bottom .content .collapsible-bottom__image>div>.order2 {
+    order: 2;
+}
+
+/* collapsible-bottom mid */
+.collapsible-bottom__mid {
+    flex: 1.4;
+    font-family: "Instrument", serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsible-bottom__mid .collapsible-bottom__mid-line {
+    margin: 65px auto;
+    text-align: center;
+    width: 50%;
+}
+
+.collapsible-bottom__mid .frame .frame_heading {
+    font-family: optima;
+    font-size: 44px;
+    line-height: 61px;
+    text-align: center;
+}
+
+.collapsible-bottom__mid .frame .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.collapsible-bottom__mid .frame .option p {
+    font-family: optima;
+    cursor: pointer;
+    size: 20px;
+    line-height: 24px;
+    border-right: 1px dotted #F3EAE5;
+    padding: 0 10px;
+}
+
+.collapsible-bottom__mid .frame .option p:not(:first-child) {
+    color: #665c58;
+}
+
+.collapsible-bottom__mid .frame .option p:last-child {
+    border: none;
+    padding-left: 10px;
+}
+
+.collapsible-bottom__mid .frame .option p:first-child {
+    padding-right: 10px;
+}
+
+.collapsible-bottom__mid .frame>p {
+    font-family: "inter", "serif";
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: center;
+}
